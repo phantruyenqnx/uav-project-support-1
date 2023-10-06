@@ -1,0 +1,74 @@
+// ------------------- communicateModuleCommon ------------------- //
+#define SLAVE_ID  0x26
+
+#define BUFFER_SIZE 64
+#define FUNC_SPINNER  0x47
+#define FUNC_HOPPER   0x58
+#define FUNC_LEVEL    0x69
+#define FUNC_SCALE    0x70
+
+#define FUNC_READ     0x89
+#define FUNC_WRITE    0x75
+
+// #define COMFC_IDLE 0
+// #define COMFC_WAITING_FOR_REPLY 1
+// #define COMFC_WAITING_FOR_TURNAROUND 2
+
+enum
+{
+    CHECK_CONNECT,
+    SPINNER_READ,
+    SPINNER_SET,
+    HOPPER_READ,
+    HOPPER_SET,
+    LEVEL_READ,
+    LEVEL_SET,
+    SCALE_READ,
+    SCALE_SET,
+    COMFC_TOTAL_NO_OF_PACKETS // leave this last entry
+};
+
+struct communicateModuleCommon
+{
+  uint8_t state = 0;
+  long delayStart = 0;
+  uint32_t frameDelay = 0;
+  uint8_t frame[BUFFER_SIZE];
+  uint8_t buffer = 0;
+  unsigned int T1_5;
+  unsigned int errorCount;
+  uint8_t func[COMFC_TOTAL_NO_OF_PACKETS] = { CHECK_CONNECT + FUNC_SPINNER,
+                                              SPINNER_READ  + FUNC_SPINNER,
+                                              SPINNER_SET   + FUNC_SPINNER,
+                                              HOPPER_READ   + FUNC_HOPPER,
+                                              HOPPER_SET    + FUNC_HOPPER,
+                                              LEVEL_READ    + FUNC_LEVEL,
+                                              LEVEL_SET     + FUNC_LEVEL,
+                                              SCALE_READ    + FUNC_SCALE,
+                                              SCALE_SET     + FUNC_SCALE};
+}_comMC;
+
+
+
+// struct PacketMC
+// {
+//   // specific packet info
+//   uint8_t id;
+//   uint8_t function;
+//   uint8_t read_write;
+//   uint8_t data1; 
+// 	uint8_t data2;
+//   // modbus information counters
+//   unsigned int requests;
+//   unsigned int successful_requests;
+// 	unsigned int failed_requests;
+// 	unsigned int exception_errors;
+//   unsigned int retries;
+//   // connection status of packet
+//   uint8_t connection; 
+  
+// };
+
+// PacketMC _packetMCs[COMFC_TOTAL_NO_OF_PACKETS]; // = {SLAVE_ID, FUNC_SPINNER, FUNC_READ, 0x00, 0x00};
+
+// PacketMC _packet

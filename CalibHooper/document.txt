@@ -1,0 +1,7 @@
+1. mở cửa xạ 1s - 5% - done
+2. nhận giá trị của cân 
+3. số cân giảm đi
+4. lưu vào mảng
+5. đạt 100%
+6. lưu vào eeprom
+

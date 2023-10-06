@@ -1,0 +1,12 @@
+{
+  "additionalFiles": "..\\..",
+  "builtInLibrariesFolders": "C:\\Program Files (x86)\\Arduino\\libraries",
+  "builtInToolsFolders": "C:\\Program Files (x86)\\Arduino\\tools-builder,C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.path=d:\\QNX\\QNX_DroneV1\\Module\\Spread\\i2cCUAV\\buid,build.warn_data_percentage=75,runtime.tools.CMSIS.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0,runtime.tools.CMSIS-5.7.0.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0,runtime.tools.xpack-arm-none-eabi-gcc.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\10.3.1-2.3,runtime.tools.xpack-arm-none-eabi-gcc-10.3.1-2.3.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\10.3.1-2.3,runtime.tools.STM32Tools.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\STM32Tools\\2.1.1,runtime.tools.STM32Tools-2.1.1.path=C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\tools\\STM32Tools\\2.1.1",
+  "fqbn": "STMicroelectronics:stm32:GenF4:pnum=BLACKPILL_F411CE,upload_method=swdMethod,xserial=generic,usb=none,xusb=FS,opt=osstd,dbg=none,rtlib=nano",
+  "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "D:\\QNX\\Arduino\\libraries",
+  "runtime.ide.version": "10819",
+  "sketchLocation": "d:\\QNX\\QNX_DroneV1\\Module\\Spread\\i2cCUAV\\stm.ino"
+}

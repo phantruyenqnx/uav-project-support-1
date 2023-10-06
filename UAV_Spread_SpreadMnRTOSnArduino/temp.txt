@@ -1,0 +1,29 @@
+ý tưởng sử dụng RS485 v1.0
+
+dùng chung cấu trúc frame sau:
+
+f1 = id
+f2 = function
+f3 = data1
+f4 = data2
+f5 = data3
+f6 = data4
+f7 = crcl
+f8 = crch
+
+Master: 
+Request:
+    frame checkconnect
+    frame Status: yêu cầu SLAVE trả về tín hiệu task đang thực thi và giá trị task đó
+    frame setTask: yêu cầu SLAVE thực thi lệnh được gửi xuống tương ứng với task
+
+trình tự tạo code trong giao tiếp modbus RS485
+- Master:
+    1. config frame mới
+    2. Viết code gửi frame mới
+- Slave:
+    1. config frame mới
+    2. Viết code nhận frame mới
+    3. Viết code phản hồi frame mới
+- Master:
+    1. Xử lý code phản hồi 
